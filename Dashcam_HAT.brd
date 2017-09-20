@@ -1511,6 +1511,9 @@ Please make sure your boards conform to these design rules.</description>
 <element name="U7" library="linear" package="DBV-R-PDSO-G5" value="TL331" x="23.08" y="18.736" smashed="yes" rot="R270">
 <attribute name="NAME" x="21.302" y="20.514" size="0.8128" layer="25" ratio="10"/>
 <attribute name="VALUE" x="21.302" y="15.688" size="1.27" layer="27" ratio="10"/>
+<attribute name="DIGIKEY_PN" value="296-10168-1-ND" x="23.08" y="18.736" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MANUFACTURER" value="Texas Instruments" x="23.08" y="18.736" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MFG_PN" value="TL331IDBVR" x="23.08" y="18.736" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="Q2" library="SparkFun" package="SOT23-3" value="MMBT2222" x="60.96" y="19.64" smashed="yes" rot="R180">
 <attribute name="MANUFACTURER" value="ON Semiconductor" x="60.96" y="19.64" size="1.778" layer="27" rot="R180" display="off"/>

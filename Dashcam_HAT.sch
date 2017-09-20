@@ -5039,7 +5039,11 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 </part>
 <part name="P+13" library="SparkFun" deviceset="VCC" device="" value="VBATT"/>
 <part name="GND22" library="SparkFun" deviceset="GND" device=""/>
-<part name="U7" library="linear" deviceset="TL331" device=""/>
+<part name="U7" library="linear" deviceset="TL331" device="">
+<attribute name="DIGIKEY_PN" value="296-10168-1-ND"/>
+<attribute name="MANUFACTURER" value="Texas Instruments"/>
+<attribute name="MFG_PN" value="TL331IDBVR"/>
+</part>
 <part name="VBAT" library="SparkFun" deviceset="VCC" device="" value="VBATT"/>
 <part name="Q2" library="SparkFun" deviceset="TRANSISTOR_NPN" device="SOT23-3" value="MMBT2222">
 <attribute name="DIGIKEY_PN" value="MMBT2222ALT1GOSCT-ND"/>
@@ -6384,7 +6388,11 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 </instance>
 <instance part="P+13" gate="1" x="330.2" y="223.52"/>
 <instance part="GND22" gate="1" x="330.2" y="195.58" rot="MR0"/>
-<instance part="U7" gate="G$1" x="330.2" y="208.28"/>
+<instance part="U7" gate="G$1" x="330.2" y="208.28">
+<attribute name="DIGIKEY_PN" x="330.2" y="208.28" size="1.778" layer="96" display="off"/>
+<attribute name="MANUFACTURER" x="330.2" y="208.28" size="1.778" layer="96" display="off"/>
+<attribute name="MFG_PN" x="330.2" y="208.28" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="VBAT" gate="1" x="101.6" y="223.52"/>
 <instance part="Q2" gate="G$1" x="342.9" y="154.94" smashed="yes">
 <attribute name="NAME" x="346.964" y="157.988" size="1.778" layer="95" font="vector"/>
