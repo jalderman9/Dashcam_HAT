@@ -1,0 +1,9 @@
+*.b#*
+*.s#*
+pdf
+gerbers
+camprep.sh
+bmp.scr
+eagle.epf
+doc/BOM/format_bom.pl
+doc/BOM/*.csv
