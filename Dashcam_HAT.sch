@@ -5165,7 +5165,7 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <attribute name="MFG_PN" value="CL31B106KBHNNNE"/>
 </part>
 <part name="GND33" library="SparkFun" deviceset="GND" device=""/>
-<part name="C11" library="SparkFun" deviceset="CAP" device="0402-CAP" value="1uF">
+<part name="C3" library="SparkFun" deviceset="CAP" device="0402-CAP" value="1uF">
 <attribute name="DIGIKEY_PN" value="490-3890-1-ND"/>
 <attribute name="MANUFACTURER" value="Murata"/>
 <attribute name="MFG_PN" value="GRM155R61A105KE15D"/>
@@ -5283,6 +5283,7 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <attribute name="MFG_PN" value="RC0402JR-071KL"/>
 </part>
 <part name="GND40" library="supply1" deviceset="GND" device=""/>
+<part name="J4" library="Jason_Connector" deviceset="M4" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5387,7 +5388,7 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <attribute name="MFG_PN" x="205.74" y="185.42" size="1.27" layer="96" display="off"/>
 </instance>
 <instance part="GND33" gate="1" x="205.74" y="175.26"/>
-<instance part="C11" gate="G$1" x="254" y="185.42" smashed="yes">
+<instance part="C3" gate="G$1" x="254" y="185.42" smashed="yes">
 <attribute name="NAME" x="255.524" y="188.341" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="255.524" y="184.912" size="1.778" layer="96" font="vector" rot="MR180"/>
 <attribute name="DIGIKEY_PN" x="254" y="185.42" size="1.27" layer="96" display="off"/>
@@ -5512,19 +5513,20 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <instance part="SUPPLY3" gate="1" x="365.76" y="208.28"/>
 <instance part="SUPPLY4" gate="1" x="330.2" y="228.6"/>
 <instance part="J5" gate="G$1" x="241.3" y="50.8"/>
-<instance part="S1" gate="G$1" x="121.92" y="213.36">
-<attribute name="DIGIKEY_PN" x="121.92" y="213.36" size="1.778" layer="96" display="off"/>
-<attribute name="MANUFACTURER" x="121.92" y="213.36" size="1.778" layer="96" display="off"/>
-<attribute name="MFG_PN" x="121.92" y="213.36" size="1.778" layer="96" display="off"/>
+<instance part="S1" gate="G$1" x="124.46" y="210.82">
+<attribute name="DIGIKEY_PN" x="124.46" y="210.82" size="1.778" layer="96" display="off"/>
+<attribute name="MANUFACTURER" x="124.46" y="210.82" size="1.778" layer="96" display="off"/>
+<attribute name="MFG_PN" x="124.46" y="210.82" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="R6" gate="G$1" x="109.22" y="213.36" smashed="yes" rot="R180">
-<attribute name="NAME" x="107.442" y="215.6206" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="111.506" y="209.804" size="1.778" layer="96" font="vector" rot="MR0"/>
-<attribute name="DIGIKEY_PN" x="109.22" y="213.36" size="1.27" layer="96" rot="R180" display="off"/>
-<attribute name="MANUFACTURER" x="109.22" y="213.36" size="1.27" layer="96" rot="R180" display="off"/>
-<attribute name="MFG_PN" x="109.22" y="213.36" size="1.27" layer="96" rot="R180" display="off"/>
+<instance part="R6" gate="G$1" x="111.76" y="210.82" smashed="yes" rot="R180">
+<attribute name="NAME" x="109.982" y="213.0806" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="114.046" y="207.264" size="1.778" layer="96" font="vector" rot="MR0"/>
+<attribute name="DIGIKEY_PN" x="111.76" y="210.82" size="1.27" layer="96" rot="R180" display="off"/>
+<attribute name="MANUFACTURER" x="111.76" y="210.82" size="1.27" layer="96" rot="R180" display="off"/>
+<attribute name="MFG_PN" x="111.76" y="210.82" size="1.27" layer="96" rot="R180" display="off"/>
 </instance>
-<instance part="GND40" gate="1" x="129.54" y="205.74"/>
+<instance part="GND40" gate="1" x="134.62" y="203.2"/>
+<instance part="J4" gate="G$1" x="157.48" y="203.2"/>
 </instances>
 <busses>
 </busses>
@@ -5565,6 +5567,9 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <junction x="99.06" y="203.2"/>
 <junction x="99.06" y="190.5"/>
 <junction x="99.06" y="185.42"/>
+<wire x1="99.06" y1="220.98" x2="142.24" y2="220.98" width="0.1524" layer="91"/>
+<junction x="99.06" y="220.98"/>
+<label x="142.24" y="220.98" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="GND13" gate="1" pin="GND"/>
@@ -5624,7 +5629,7 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <wire x1="205.74" y1="182.88" x2="205.74" y2="177.8" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C11" gate="G$1" pin="2"/>
+<pinref part="C3" gate="G$1" pin="2"/>
 <pinref part="GND35" gate="1" pin="GND"/>
 <wire x1="254" y1="182.88" x2="254" y2="177.8" width="0.1524" layer="91"/>
 </segment>
@@ -5686,8 +5691,8 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 </segment>
 <segment>
 <pinref part="S1" gate="G$1" pin="2"/>
-<wire x1="127" y1="213.36" x2="129.54" y2="213.36" width="0.1524" layer="91" style="longdash"/>
-<wire x1="129.54" y1="213.36" x2="129.54" y2="208.28" width="0.1524" layer="91" style="longdash"/>
+<wire x1="129.54" y1="210.82" x2="134.62" y2="210.82" width="0.1524" layer="91" style="longdash"/>
+<wire x1="134.62" y1="210.82" x2="134.62" y2="205.74" width="0.1524" layer="91" style="longdash"/>
 <pinref part="GND40" gate="1" pin="GND"/>
 </segment>
 </net>
@@ -6130,7 +6135,7 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <net name="VCC-AVR" class="0">
 <segment>
 <pinref part="U6" gate="G$1" pin="VOUT"/>
-<pinref part="C11" gate="G$1" pin="1"/>
+<pinref part="C3" gate="G$1" pin="1"/>
 <wire x1="248.92" y1="193.04" x2="254" y2="193.04" width="0.1524" layer="91"/>
 <wire x1="254" y1="193.04" x2="254" y2="190.5" width="0.1524" layer="91"/>
 <pinref part="SUPPLY1" gate="1" pin="VCC"/>
@@ -6179,14 +6184,29 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <segment>
 <pinref part="J3" gate="G$1" pin="12"/>
 <pinref part="R6" gate="G$1" pin="2"/>
-<wire x1="96.52" y1="213.36" x2="104.14" y2="213.36" width="0.1524" layer="91" style="longdash"/>
+<wire x1="96.52" y1="213.36" x2="106.68" y2="213.36" width="0.1524" layer="91" style="longdash"/>
+<wire x1="106.68" y1="213.36" x2="106.68" y2="210.82" width="0.1524" layer="91" style="longdash"/>
 </segment>
 </net>
 <net name="N$24" class="0">
 <segment>
 <pinref part="R6" gate="G$1" pin="1"/>
 <pinref part="S1" gate="G$1" pin="1"/>
-<wire x1="114.3" y1="213.36" x2="116.84" y2="213.36" width="0.1524" layer="91" style="longdash"/>
+<wire x1="116.84" y1="210.82" x2="119.38" y2="210.82" width="0.1524" layer="91" style="longdash"/>
+</segment>
+</net>
+<net name="UART1_TX" class="0">
+<segment>
+<pinref part="J3" gate="G$1" pin="8"/>
+<wire x1="96.52" y1="218.44" x2="142.24" y2="218.44" width="0.1524" layer="91"/>
+<label x="142.24" y="218.44" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="UART1_RX" class="0">
+<segment>
+<pinref part="J3" gate="G$1" pin="10"/>
+<wire x1="96.52" y1="215.9" x2="142.24" y2="215.9" width="0.1524" layer="91"/>
+<label x="142.24" y="215.9" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
@@ -6226,7 +6246,7 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <attribute name="VALUE" x="115.062" y="210.312" size="1.778" layer="96" font="vector" rot="R180"/>
 </instance>
 <instance part="GND1" gate="1" x="129.54" y="208.28"/>
-<instance part="GND6" gate="1" x="134.62" y="63.5"/>
+<instance part="GND6" gate="1" x="134.62" y="55.88"/>
 <instance part="U1" gate="G$1" x="124.46" y="149.86" smashed="yes">
 <attribute name="VALUE" x="106.426" y="118.11" size="1.6764" layer="96" font="vector" ratio="10" rot="R180"/>
 <attribute name="NAME" x="94.234" y="181.61" size="1.6764" layer="95" font="vector" ratio="10"/>
@@ -6247,7 +6267,7 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <attribute name="MFG_PN" x="101.6" y="213.36" size="1.27" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="GND9" gate="1" x="101.6" y="187.96"/>
-<instance part="P+9" gate="G$1" x="134.62" y="78.74"/>
+<instance part="P+9" gate="G$1" x="134.62" y="68.58"/>
 <instance part="P+33" gate="G$1" x="124.46" y="218.44"/>
 <instance part="GND16" gate="1" x="162.56" y="119.38"/>
 <instance part="GND34" gate="1" x="180.34" y="127"/>
@@ -6379,12 +6399,12 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <attribute name="MANUFACTURER" x="160.02" y="195.58" size="1.778" layer="96" display="off"/>
 <attribute name="MFG_PN" x="160.02" y="195.58" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="C2" gate="G$1" x="134.62" y="68.58" smashed="yes">
-<attribute name="NAME" x="136.144" y="71.501" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="136.144" y="68.072" size="1.778" layer="96" font="vector" rot="MR180"/>
-<attribute name="DIGIKEY_PN" x="134.62" y="68.58" size="1.27" layer="96" display="off"/>
-<attribute name="MANUFACTURER" x="134.62" y="68.58" size="1.27" layer="96" display="off"/>
-<attribute name="MFG_PN" x="134.62" y="68.58" size="1.27" layer="96" display="off"/>
+<instance part="C2" gate="G$1" x="134.62" y="60.96" smashed="yes">
+<attribute name="NAME" x="136.144" y="63.881" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="136.144" y="60.452" size="1.778" layer="96" font="vector" rot="MR180"/>
+<attribute name="DIGIKEY_PN" x="134.62" y="60.96" size="1.27" layer="96" display="off"/>
+<attribute name="MANUFACTURER" x="134.62" y="60.96" size="1.27" layer="96" display="off"/>
+<attribute name="MFG_PN" x="134.62" y="60.96" size="1.27" layer="96" display="off"/>
 </instance>
 <instance part="P+13" gate="1" x="330.2" y="223.52"/>
 <instance part="GND22" gate="1" x="330.2" y="195.58" rot="MR0"/>
@@ -6408,12 +6428,12 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <attribute name="MANUFACTURER" x="332.74" y="154.94" size="1.27" layer="96" rot="R180" display="off"/>
 <attribute name="MFG_PN" x="332.74" y="154.94" size="1.27" layer="96" rot="R180" display="off"/>
 </instance>
-<instance part="R61" gate="G$1" x="137.16" y="91.44" smashed="yes" rot="R180">
-<attribute name="NAME" x="135.382" y="93.7006" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="139.446" y="87.884" size="1.778" layer="96" font="vector" rot="MR0"/>
-<attribute name="DIGIKEY_PN" x="137.16" y="91.44" size="1.27" layer="96" rot="R180" display="off"/>
-<attribute name="MANUFACTURER" x="137.16" y="91.44" size="1.27" layer="96" rot="R180" display="off"/>
-<attribute name="MFG_PN" x="137.16" y="91.44" size="1.27" layer="96" rot="R180" display="off"/>
+<instance part="R61" gate="G$1" x="137.16" y="83.82" smashed="yes" rot="R180">
+<attribute name="NAME" x="135.382" y="86.0806" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="139.446" y="80.264" size="1.778" layer="96" font="vector" rot="MR0"/>
+<attribute name="DIGIKEY_PN" x="137.16" y="83.82" size="1.27" layer="96" rot="R180" display="off"/>
+<attribute name="MANUFACTURER" x="137.16" y="83.82" size="1.27" layer="96" rot="R180" display="off"/>
+<attribute name="MFG_PN" x="137.16" y="83.82" size="1.27" layer="96" rot="R180" display="off"/>
 </instance>
 <instance part="R25" gate="G$1" x="287.02" y="218.44" smashed="yes" rot="R270">
 <attribute name="NAME" x="283.4386" y="220.98" size="1.778" layer="95" font="vector" rot="R270"/>
@@ -6475,7 +6495,7 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <attribute name="MFG_PN" x="172.72" y="182.88" size="1.27" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="FRAME2" gate="G$1" x="0" y="0"/>
-<instance part="U$1" gate="G$1" x="147.32" y="91.44"/>
+<instance part="U$1" gate="G$1" x="147.32" y="83.82"/>
 </instances>
 <busses>
 </busses>
@@ -6490,7 +6510,7 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 </net>
 <net name="GND" class="0">
 <segment>
-<wire x1="134.62" y1="66.04" x2="134.62" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="58.42" x2="134.62" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="GND6" gate="1" pin="GND"/>
 <pinref part="C2" gate="G$1" pin="2"/>
 </segment>
@@ -6663,13 +6683,13 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 </net>
 <net name="CAN_TX" class="0">
 <segment>
-<wire x1="127" y1="88.9" x2="127" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="127" y1="91.44" x2="127" y2="114.3" width="0.1524" layer="91"/>
-<junction x="127" y="91.44"/>
+<wire x1="127" y1="81.28" x2="127" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="127" y1="83.82" x2="127" y2="114.3" width="0.1524" layer="91"/>
+<junction x="127" y="83.82"/>
 <pinref part="U1" gate="G$1" pin="CAN_TX"/>
-<label x="127" y="88.9" size="1.27" layer="95" rot="R270" xref="yes"/>
+<label x="127" y="81.28" size="1.27" layer="95" rot="R270" xref="yes"/>
 <pinref part="R61" gate="G$1" pin="2"/>
-<wire x1="127" y1="91.44" x2="132.08" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="127" y1="83.82" x2="132.08" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="345.44" y1="106.68" x2="350.52" y2="106.68" width="0.1524" layer="91"/>
@@ -6747,11 +6767,10 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <wire x1="124.46" y1="218.44" x2="129.54" y2="218.44" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="134.62" y1="78.74" x2="134.62" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="76.2" x2="134.62" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="76.2" x2="121.92" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="76.2" x2="121.92" y2="76.2" width="0.1524" layer="91"/>
-<junction x="134.62" y="76.2"/>
+<wire x1="134.62" y1="68.58" x2="134.62" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="66.04" x2="121.92" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="66.04" x2="121.92" y2="66.04" width="0.1524" layer="91"/>
+<junction x="134.62" y="66.04"/>
 <pinref part="U1" gate="G$1" pin="VDD"/>
 <pinref part="P+9" gate="G$1" pin="3.3V"/>
 <pinref part="C2" gate="G$1" pin="1"/>
@@ -6816,7 +6835,7 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <segment>
 <pinref part="R61" gate="G$1" pin="1"/>
 <pinref part="U$1" gate="G$1" pin="5V"/>
-<wire x1="142.24" y1="91.44" x2="147.32" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="83.82" x2="147.32" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$11" class="0">
